@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/14r9tfd0wqr-k.css","style"]
+:HL["/logo.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cart","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"2k_-NsRbrXHsMpXGbKQoS"}

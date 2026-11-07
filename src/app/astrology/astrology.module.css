@@ -1,0 +1,237 @@
+.heroSection {
+  margin-bottom: 4rem;
+}
+.subtitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.line {
+  height: 1px;
+  width: 50px;
+  background-color: var(--primary-color);
+}
+.title {
+  /* 56px on desktop, scaling down so it fits a phone. */
+  font-size: clamp(2.1rem, 9vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+.description {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+  height: 100%;
+}
+
+.cardTitle {
+  font-size: clamp(1.35rem, 5.5vw, 1.8rem);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-main);
+}
+.cardTitleIcon {
+  color: var(--primary-color);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+  font-size: 14px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 16px;
+  color: var(--primary-color);
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px 14px 46px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-color);
+  color: var(--text-main);
+  font-size: 15px;
+  appearance: none;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+.resultsArea {
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+}
+
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem;
+}
+
+.emptyIcon {
+  color: var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.errorState {
+  background: #FFF5F5;
+  border: 1px solid #FEB2B2;
+  color: #C53030;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.resultTitle {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: var(--text-main);
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resultItem {
+  background: var(--bg-color);
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.resultLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  margin-bottom: 6px;
+}
+
+.resultValue {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.resultSubValue {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Tabs */
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.tabBtn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.tabBtnActive {
+  background: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(181, 132, 60, 0.3);
+}
+
+.tabBtnActive:hover {
+  color: var(--white);
+}
+
+.badge {
+  background: var(--bg-color);
+  color: var(--text-main);
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid var(--border-color);
+}

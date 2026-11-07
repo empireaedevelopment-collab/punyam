@@ -1,0 +1,215 @@
+.heroSection {
+  margin-bottom: 40px;
+}
+.subtitle {
+  color: #c19b63;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.line {
+  height: 1px;
+  width: 40px;
+  background-color: #c19b63;
+}
+.title {
+  font-size: clamp(28px, 8vw, 42px);
+  color: #222;
+  margin-bottom: 15px;
+}
+.description {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+.cardTitle {
+  font-size: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+.cardTitleIcon {
+  color: #c19b63;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+.formGroup.fullWidth {
+  grid-column: 1 / -1;
+}
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inputIcon {
+  position: absolute;
+  left: 15px;
+  color: #999;
+}
+.input {
+  width: 100%;
+  padding: 14px 15px 14px 45px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #fcfcfc;
+}
+.input:focus {
+  border-color: #c19b63;
+  box-shadow: 0 0 0 3px rgba(193, 155, 99, 0.1);
+  background-color: #fff;
+}
+
+.selectGroup {
+  display: flex;
+  gap: 15px;
+}
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  justify-content: center;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.radioLabel input {
+  display: none;
+}
+.radioLabel:has(input:checked) {
+  background-color: rgba(193, 155, 99, 0.1);
+  border-color: #c19b63;
+  color: #c19b63;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.resultsArea {
+  background-color: #fafafa;
+  border: 1px dashed #ddd;
+}
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  min-height: 300px;
+  color: #888;
+}
+.emptyIcon {
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.errorState {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.resultTitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #c19b63;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.resultSection {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.resultGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.dataPoint {
+  margin-bottom: 10px;
+}
+.dataLabel {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.dataValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+.dataSub {
+  font-size: 13px;
+  color: #888;
+}

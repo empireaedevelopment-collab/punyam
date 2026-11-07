@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/17u3vjkdcq2li.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"container section-padding","style":{"marginTop":"80px","minHeight":"60vh"},"children":["$","div",null,{"className":"text-center","children":[["$","div",null,{"className":"sectionSubtitle","children":[["$","span",null,{"className":"line","style":{"display":"inline-block"}}]," COMMUNITY ",["$","span",null,{"className":"line","style":{"display":"inline-block"}}]]}],["$","h1",null,{"className":"sectionTitle","style":{"marginBottom":"20px"},"children":"Join The Movement"}],["$","p",null,{"style":{"maxWidth":"600px","margin":"0 auto","color":"var(--text-muted)"},"children":"Become a member of the Punyam Community. Participate in spiritual discussions, volunteer, or support our mission with recurring donations."}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GB49RkhHlkbIiplCVlvlo"}
+4:null

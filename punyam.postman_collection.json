@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "784b0a7c-123e-400b-9aef-e1e5ccca6290",
+		"name": "punyam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49974711",
+		"_collection_link": "https://muhammednabeel1832-4175646.postman.co/workspace/Mohammed-Nabeel's-Workspace~d913a9dc-4bd3-4313-844a-891e3a01c1ed/collection/49974711-784b0a7c-123e-400b-9aef-e1e5ccca6290?action=share&source=collection_link&creator=49974711"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"phone\": \"+919876543210\",\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\",\n  \"confirm_password\": \"pass12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/auth/register/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

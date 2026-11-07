@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/14r9tfd0wqr-k.css","style"]
+:HL["/logo.png","image"]
+:HL["/product_3.png","image"]
+:HL["/product_1.png","image"]
+:HL["/product_2.png","image"]
+:HL["/product_4.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"shop","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"7","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"2k_-NsRbrXHsMpXGbKQoS"}

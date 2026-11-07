@@ -1,0 +1,39 @@
+/* Branding panel and form sit side by side on desktop. On phones they stack,
+   and the branding shrinks to a short band so the form is reachable. These
+   sizes used to be inline styles, which cannot respond to screen width. */
+.card {
+  display: flex;
+  min-height: 600px;
+}
+
+.brand {
+  padding: 40px;
+}
+
+.brandTitle {
+  font-size: 42px;
+}
+
+.form {
+  padding: 60px 50px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .brand {
+    padding: 28px 24px;
+  }
+  .brandTitle {
+    font-size: 26px;
+  }
+  .brandText,
+  .brandPoints {
+    display: none;
+  }
+  .form {
+    padding: 32px 22px;
+  }
+}

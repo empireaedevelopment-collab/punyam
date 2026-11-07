@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/14r9tfd0wqr-k.css","style"]
+:HL["/_next/static/chunks/3r2gkprftjwwg.css","style"]
+:HL["/logo.png","image"]
+:HL["/hero_bg.png","image"]
+:HL["/video_1.png","image"]
+:HL["/video_2.png","image"]
+:HL["/video_3.png","image"]
+:HL["/video_4.png","image"]
+:HL["/avatar_1.png","image"]
+:HL["/avatar_2.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"2k_-NsRbrXHsMpXGbKQoS"}

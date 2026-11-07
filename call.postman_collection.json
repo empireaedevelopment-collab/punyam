@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "bc5c54dd-27ac-41dc-b4e2-7a474ab95ed5",
+		"name": "call",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49974711",
+		"_collection_link": "https://muhammednabeel1832-4175646.postman.co/workspace/Mohammed-Nabeel's-Workspace~d913a9dc-4bd3-4313-844a-891e3a01c1ed/collection/49974711-bc5c54dd-27ac-41dc-b4e2-7a474ab95ed5?action=share&source=collection_link&creator=49974711"
+	},
+	"item": [
+		{
+			"name": "all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"channel_name\": \"call_abc123\",\n  \"uid\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/video/agora-token/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"video",
+						"agora-token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "initiate call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"astrologer_id\": 3,\n  \"user_id\": 8,\n  \"booking_id\": \"e05bcd06-4948-4ea4-85af-eda59ab12eba\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/video/initiate/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"video",
+						"initiate",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

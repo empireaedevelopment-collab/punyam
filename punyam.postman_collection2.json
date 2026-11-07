@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "784b0a7c-123e-400b-9aef-e1e5ccca6290",
+		"name": "punyam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49974711",
+		"_collection_link": "https://muhammednabeel1832-4175646.postman.co/workspace/Mohammed-Nabeel's-Workspace~d913a9dc-4bd3-4313-844a-891e3a01c1ed/collection/49974711-784b0a7c-123e-400b-9aef-e1e5ccca6290?action=share&source=collection_link&creator=49974711"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"phone\": \"+919876543210\",\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\",\n  \"confirm_password\": \"pass12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/auth/register/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}"
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com/api/auth/profile/?user_id=2",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"auth",
+						"profile",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "languages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}"
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/languages/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"languages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Consultation Topics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}"
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/consultation-topics/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"consultation-topics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Astrologers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}"
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/astrologers/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"astrologers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "time slots",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass12345\"\n}"
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com/api/time-slots/available_dates/?astrologer=1",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"api",
+						"time-slots",
+						"available_dates",
+						""
+					],
+					"query": [
+						{
+							"key": "astrologer",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": 2,\n  \"astrologer\": 1,\n  \"language\": 1,\n  \"topic\": 1,\n  \"time_slot\": 1,\n  \"consultation_type\": \"book_call\",\n  \"duration_minutes\": 30,\n  \"amount\": 500.00,\n  \"notes\": \"Need guidance on career change\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com//api/bookings/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"",
+						"api",
+						"bookings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my booking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com/api/bookings/my_bookings/?user_id=2",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						"my_bookings",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "initial payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com/api/bookings/bb95840b-ef0b-4c17-ad90-8b539524bfdb/initiate_payment/",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						"bb95840b-ef0b-4c17-ad90-8b539524bfdb",
+						"initiate_payment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confirm payment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "booking history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://punyam.pythonanywhere.com/api/booking-history/?booking=bb95840b-ef0b-4c17-ad90-8b539524bfdb",
+					"protocol": "http",
+					"host": [
+						"punyam",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"api",
+						"booking-history",
+						""
+					],
+					"query": [
+						{
+							"key": "booking",
+							"value": "bb95840b-ef0b-4c17-ad90-8b539524bfdb"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
